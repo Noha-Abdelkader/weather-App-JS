@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+    <!-- ------------ slick slider ------------------------->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <!-- ---------- aos animation ---------------------- -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- ------------ font awsome-------------------------->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- ------------- bootstrap ---------------------------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ------------- style sheet---------------------------- -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ======= start navbar =======================================   -->
+    <nav class="navbar navbar-expand-md navbar-dark pt-0">
+        <div class="container-fluid container-xl align-items-start px-3 ">
+            <a class="navbar-brand d-flex justify-content-center align-items-center pt-4" href="#">
+                <div class="w-25 me-2">
+                    <img src="images/logo@2x.png" alt="logo" class="w-100">
+                </div>
+                <div class='d-flex flex-column'>
+                    <h6 class="mb-1 fw-bolder"> Wheather </h6>
+                    <span class=-50">tagline goes here</span>
+                </div>
+            </a>
+            <button class="navbar-toggler pt-4 border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#search">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#astro">Sunrise/Sunset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hours">Forecast By Hours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ======= end navbar =======================================   -->
+
+    <!-- ======= start search section  ========================================== -->
+    <section id="search" class="text-center ">
+        <div class="position-relative w-100 mb-4">
+            <input id="inputLocation" type="text" placeholder="Find your location..."
+                class="rounded rounded-pill p-3 border-0  w-100">
+            <!-- <button id="findBtn" class="rounded rounded-pill border-0 position-absolute mx-2">Find</button> -->
+        </div>
+
+        <div id="result" class="container">
+            <div class="row rounded-3 " data-aos="zoom-in">
+                <div id="table-1" class="col-md-4 ">
+                </div>
+                <div class="col-md-4 table-2">
+                </div>
+                <div class="col-md-4 table-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======== end result section ============================== -->
+
+    <!-- ====== start contact section ==================================================== -->
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <header class="rounded-pill py-3 px-4 w-100 mb-3">
+                <h6>Home <i class="fa-solid fa-right-long"></i> contact </h6>
+            </header>
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <div>
+                        <div class="mb-2">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2741376656!2d-118.6919275452187!3d34.020161290498805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2seg!4v1676148637803!5m2!1sen!2seg"
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fa-solid fa-location-dot"></i>Company Name INC.
+                                2803 Avenue Street, Los Angeles</li>
+                            <li> <i class="fa-solid fa-phone"></i> <a href="tel:+1 800 314 235"></a>+1 800 314 235</li>
+                            <li><i class="fa-solid fa-envelope"></i><a href="mailto:contact@companyname.com"
+                                    class="text-decoration-none">contact@companyname.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div>
+                        <h4 class="fw-bolder">Contact us</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore
+                            ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum.
+                            Nisi facilis odit hic, ipsum sed!</p>
+                        <div>
+                            <div class="d-flex justify-content-center align-items-center mb-1">
+                                <input type="text" name="" id="" placeholder="You Name...">
+                                <input type="text" name="" id="" placeholder="Email Address...">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center mb-1">
+                                <input type="text" name="" id="" placeholder="Company name...">
+                                <input type="text" name="" id="" placeholder="Website...">
+
+                            </div>
+                            <textarea class="mb-3" name="" id="" placeholder="Message..."></textarea>
+                            <button id="submitBtn" class="rounded-pill"> submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ====== end contact section ==================================================== -->
+
+
+    <!-- ============ start astro section ================================= -->
+    <section id="astro" class="py-5 text-center">
+
+        <div class="container">
+            <header class="rounded-pill py-3 px-4 w-100 mb-3">
+                <h6>Home <i class="fa-solid fa-right-long"></i> Sunrise/sunset</h6>
+            </header>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-10">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ============ end astro section ================================= -->
+
+
+    <!-- ============ start hours section ================================= -->
+    <section id="hours" class="py-5">
+
+        <div class="container">
+            <header class="rounded-pill py-3 px-4 w-100 mb-3">
+                <h6>Home <i class="fa-solid fa-right-long"></i> forecast by hours </h6>
+            </header>
+
+            <div class="containerInner px-0 mb-5 flip-up">
+
+                <h4 class="dayDate">1</h4>
+                <div class="dayDetails responsive owl-carousel owl-theme" >1</div>
+            </div>
+
+            <div class="containerInner  px-0 mb-5">
+
+                <h4 class="dayDate ">2</h4>
+                <div class="dayDetails responsive owl-carousel owl-theme"  data-aos="zoom-in-up">2</div>
+            </div>
+
+            <div class="containerInner   px-0 mb-5">
+
+                <h4 class="dayDate">3</h4>
+                <div class="dayDetails responsive owl-carousel owl-theme"  data-aos="zoom-in-up">3</div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- ============ end hours section ================================= -->
+
+
+    <!-- =========================== Start  Footer section ======================================= -->
+
+    <div id="footer" class="py-5">
+        <div class="container w-75 m-auto">
+            <div class="row align-items-center justify-content-between mb-2 ">
+
+                <div class="col-lg-8 mb-3">
+                    <div id="subscribe-nav" class="w-100 d-flex position-relative">
+                        <input type="text" id="subscribeInput" class="rounded rounded-pill p-3 border-0  w-100"
+                            placeholder="Enter your email to subscribe...">
+                        <!-- <button id="subscribeBtn" class="rounded rounded-pill border-0 position-absolute mx-2">Subscribe</button> -->
+                    </div>
+                </div>
+                <div class=" col-lg-3 mb-1">
+                    <ul class="list-unstyled d-flex justify-content-center align-items-center mb-0">
+                        <li><a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook-f"></i><span
+                                    class="hover"></span></a></li>
+                        <li><a href="https://twitter.com/login?lang=en"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://myaccount.google.com/profile"><i
+                                    class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="https://www.pinterest.com/login/"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="footer-pra">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+
+    </div>
+    <!-- =========================== End  Footer section ======================================= -->
+
+    <!-- ------------ jquery  ------------------------->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <!-- ------------ slick slider ------------------------->
+    <script src="js/slick.min.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+
+    <!-- ---------- aos animation ---------------------- -->
+    <script src="js/aos.js"></script>
+    
+    <!-- ------------ bootstrap ------------------------->
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <!-- ------------ script  ------------------------->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
